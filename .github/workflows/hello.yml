@@ -5,7 +5,8 @@ on:
   push:
 
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Print greeting
-      run: echo "Hello world and all who inhabit it!!"
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello world and all who inhabit it!!"
