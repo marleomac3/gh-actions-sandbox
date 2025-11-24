@@ -10,3 +10,10 @@ jobs:
     steps:
       - name: Print greeting
         run: echo "Hello world and all who inhabit it!!"
+
+  test:
+    needs: hello
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print message after greeting step
+        run: echo "Tests running after build!"
